@@ -1,3 +1,9 @@
+---
+ID: 001
+Date: 2026-03-06
+Tags: config-change, rotate, observer-duplication, async-operation, lifecycle
+---
+
 # LiveData Config Change Issue
 
 ## Câu hỏi
@@ -209,7 +215,3 @@ lifecycleScope.launch {
 3. **Gọi async function trong onCreate = duplicate work**
 4. **LiveData lifecycle-aware giúp**, nhưng không giải quyết hết race condition
 5. **Flow/StateFlow giải quyết root cause tốt hơn** vì emit-based, không observer-based
-
-## Tags
-
-`LiveData`, `ViewModel`, `Config Change`, `Observer Pattern`, `Lifecycle`
